@@ -27,7 +27,6 @@ export const SCard = styled.a`
 
   & div,
   & p {
-    color: ${COLOR_THEME.text};
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.5;

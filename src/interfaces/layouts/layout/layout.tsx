@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
-import { Footer, Sidebar } from '#components';
+import { Footer, PreviewAlert, Sidebar } from '#components';
 import { SContainer, SScrollContent, SMain } from './styled';
 
-export const Layout = ({ children }) => (
+export const Layout = ({ preview = false, children }) => (
     <SContainer>
         <Head>
             <title>Create Next App</title>
@@ -12,6 +12,8 @@ export const Layout = ({ children }) => (
         </Head>
 
         <Sidebar />
+
+        <PreviewAlert preview={preview} />
 
         <SScrollContent>
             <SMain>

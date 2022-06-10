@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, Description, Grid, Layout, PreTitle, Title } from '#interfaces';
+import { Card, Description, Grid, Layout, PreTitle } from '#interfaces';
 import { STitle } from './styled';
 
 export const Home = ({ page, preview }) => (
-    <Layout>
+    <Layout preview={preview}>
         <PreTitle>{page.pretitle}</PreTitle>
         <STitle>{page.title}</STitle>
 

@@ -7,3 +7,4 @@ export * from './code';
 export * from './description';
 export * from './sidebar';
 export * from './link';
+export * from './previewAlert';
