@@ -7,8 +7,6 @@ export const Steps = () => (
         <Title>Steps</Title>
         <div>
             <SList>
-                <SListItem><a target="_blank" href="https://github.com/vercel/next.js/tree/canary/examples/cms-prismic" rel="noopener noreferrer">prismic</a></SListItem>
-                <SListItem>prismic preview</SListItem>
                 <SListItem>light mode</SListItem>
                 <SListItem><a target="_blank" href="https://nextjs.org/docs/advanced-features/i18n-routing" rel="noopener noreferrer">language</a></SListItem>
                 <SListItem>icon sidebar + style</SListItem>
