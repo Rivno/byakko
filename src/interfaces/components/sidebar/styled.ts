@@ -1,22 +1,44 @@
 import { COLOR_THEME } from '#design';
 import styled from 'styled-components';
 
-export const SSidebar = styled.div`
+export const SSidebarContainer = styled.div`
+    position: relative;
     grid-area: sidebar;
-    background-color: ${COLOR_THEME.background.secondary};
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: '';
+        background-color: var(--color-primary);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+`;
+
+export const SSidebar = styled.div`
+    background-color: var(--color-background-secondary);
+    min-width: 7.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    place-items: center;
     gap: 2rem;
-    align-items: center;
+    height: fit-content;
+    padding: 5rem 1rem;
+    border-radius: 4rem;
+    position: relative;
+    left: 1rem;
+    font-size: 1rem;
 `;
 
 export const SSidebarLink = styled.div<{ $active: boolean }>`
-    color: ${({ $active }) => $active ? COLOR_THEME.primary : COLOR_THEME.text };
+    color: ${({ $active }) => $active ? 'var(--color-primary)' : 'var(--color-text)' };
 
     @media(hover: hover) {
         &:hover {
-            color: ${COLOR_THEME.primaryFocus};
+            color: var(--color-primary-focus);
         }
     }
 `;

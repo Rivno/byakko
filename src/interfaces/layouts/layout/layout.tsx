@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Footer, PreviewAlert, Sidebar } from '#components';
 import { SContainer, SScrollContent, SMain } from './styled';
+import { DarkModeSwitch } from './darkModeSwitch';
 
 export const Layout = ({ preview = false, children }) => (
     <SContainer>
@@ -14,6 +15,8 @@ export const Layout = ({ preview = false, children }) => (
         <Sidebar />
 
         <PreviewAlert preview={preview} />
+
+        <DarkModeSwitch />
 
         <SScrollContent>
             <SMain>

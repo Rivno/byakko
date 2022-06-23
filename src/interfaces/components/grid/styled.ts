@@ -5,7 +5,7 @@ export const SGrid = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 80rem;
     margin: auto;
 
     @media (max-width: 600px) {

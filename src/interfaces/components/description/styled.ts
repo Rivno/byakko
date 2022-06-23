@@ -3,10 +3,10 @@ import { COLOR_THEME } from '#design';
 
 export const SDescription = styled.p`
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 
     & a {
-        color: ${COLOR_THEME.secondary};
+        color: var(--color-secondary);
         text-decoration: none;
     }
 

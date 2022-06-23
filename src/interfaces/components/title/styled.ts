@@ -4,11 +4,11 @@ import { COLOR_THEME } from '#design';
 export const STitle = styled.h1`
     margin: 0;
     line-height: 4rem;
-    font-size: 5rem;
-    color: ${COLOR_THEME.primary};
+    font-size: 6rem;
+    color: var(--color-primary);
 
     & a {
-        color: ${COLOR_THEME.secondary};
+        color: var(--color-secondary);
         text-decoration: none;
     }
 

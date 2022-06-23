@@ -44,6 +44,8 @@ export async function getHomepage(previewData) {
             homepage(uid: "homepage", lang: "${API_LOCALE}"){
                 pretitle
                 title
+                subtitle
+                datestart
                 description
             }
         }`,

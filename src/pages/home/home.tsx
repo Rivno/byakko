@@ -8,7 +8,7 @@ export const Home = ({ page, preview }) => (
         <STitle>{page.title}</STitle>
 
         <Description>
-            {page.description?.[0]?.text}
+            {page.subtitle?.[0]?.text}
         </Description>
 
         <Grid>

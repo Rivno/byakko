@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { COLOR_THEME } from '#design';
 
 export const SLink = styled.a`
-    color: ${COLOR_THEME.secondary};
+    color: var(--color-secondary);
     text-decoration: none;
 
     &:hover,
