@@ -14,8 +14,8 @@ export const SListItem = styled.li`
         color: ${COLOR_THEME.primary};
         font-weight: bold;
         display: inline-block;
-        width: 1em;
-        margin-left: -1em;
+        width: 1rem;
+        margin-left: -1rem;
     }
 
     & a {

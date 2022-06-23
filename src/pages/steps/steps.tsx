@@ -7,17 +7,18 @@ export const Steps = () => (
         <Title>Steps</Title>
         <div>
             <SList>
-                <SListItem>light mode</SListItem>
                 <SListItem><a target="_blank" href="https://nextjs.org/docs/advanced-features/i18n-routing" rel="noopener noreferrer">language</a></SListItem>
+                <SListItem>storybook</SListItem>
+                <SListItem>smooth scroll</SListItem>
                 <SListItem>icon sidebar + style</SListItem>
                 <SListItem>github link</SListItem>
                 <SListItem>linkedin link</SListItem>
+                <SListItem><a target="_blank" href="https://bholmes.dev/blog/a-shiny-on-hover-effect-that-follows-your-mouse-css/" rel="noopener noreferrer">glow</a></SListItem>
                 <SListItem>hero</SListItem>
                 <SListItem>prismic template</SListItem>
                 <SListItem>contact</SListItem>
                 <SListItem>stack</SListItem>
                 <SListItem>about me</SListItem>
-                <SListItem><a target="_blank" href="https://bholmes.dev/blog/a-shiny-on-hover-effect-that-follows-your-mouse-css/" rel="noopener noreferrer">glow</a></SListItem>
                 <SListItem>experiences</SListItem>
                 <SListItem>routing config</SListItem>
                 <SListItem>2 - 3 articles</SListItem>

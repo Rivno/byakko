@@ -6,9 +6,9 @@ export const SAlertPreview = styled.div`
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding: 8px;
+    padding: 0.8rem;
     background-color: ${COLOR_PALETTE.yellow};
-    color: ${COLOR_THEME.background.primary};
+    color: var(--color-background-primary);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 `;

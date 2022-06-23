@@ -7,28 +7,28 @@ export const SCard = styled.a`
     text-align: left;
     color: inherit;
     text-decoration: none;
-    border: 1px solid ${COLOR_THEME.text};
-    border-radius: 10px;
+    border: 1px solid currentColor;
+    border-radius: 1rem;
     transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: 300px;
+    max-width: 30rem;
 
   &:hover,
   &:focus,
   &:active {
-    color: ${COLOR_THEME.primaryFocus};
-    border-color: ${COLOR_THEME.primaryFocus};
+    color: var(--color-primary-focus);
+    border-color: var(--color-primary-focus);
   }
 
   & h2 {
     margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-    color: ${COLOR_THEME.primary};
+    font-size: 1.8rem;
+    color: var(--color-primary);
   }
 
   & div,
   & p {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
 `;
