@@ -7,11 +7,18 @@ const GRAPHQL_API_URL = `https://${REPOSITORY}.cdn.prismic.io/graphql`;
 export const API_TOKEN = process.env.PRISMIC_API_TOKEN;
 export const API_LOCALE = process.env.PRISMIC_REPOSITORY_LOCALE;
 
+const LOCALE_MAP = {
+    fr: 'fr-FR',
+    en: 'en-US',
+};
+
+const getPrismicLocale = (locale) => LOCALE_MAP[locale] || LOCALE_MAP.fr;
+
 export const PrismicClient = Prismic.client(REF_API_URL, {
     accessToken: API_TOKEN,
 });
 
-async function fetchAPI(query, { previewData, variables }: { previewData?: any; variables?: any; } = {}) {
+const fetchAPI = async (query, { previewData, variables }: { previewData?: any; variables?: any; } = {}) => {
     const prismicAPI = await PrismicClient.getApi();
     const res = await fetch(
     `${GRAPHQL_API_URL}?query=${query}&variables=${JSON.stringify(variables)}`,
@@ -38,10 +45,10 @@ async function fetchAPI(query, { previewData, variables }: { previewData?: any; 
     return json.data;
 }
 
-export async function getHomepage(previewData) {
+export const getHomepage = async (previewData, locale) => {
     const data = await fetchAPI(`
         query {
-            homepage(uid: "homepage", lang: "${API_LOCALE}"){
+            homepage(uid: "homepage", lang: "${getPrismicLocale(locale)}"){
                 pretitle
                 title
                 subtitle
